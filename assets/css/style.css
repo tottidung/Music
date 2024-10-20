@@ -1,0 +1,367 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.none {
+    display: none;
+}
+
+body {
+    font-family: "Lora", serif;
+    background-color: #f0f0f0;
+    margin: 0 auto;
+    width: 960px;
+    padding: 20px;
+}
+
+body>div {
+    margin: 5% auto 0;
+    max-width: 360px;
+}
+
+
+.player {
+    position: relative;
+    max-width: 480px;
+    margin: 0 auto;
+
+}
+
+
+.dashboard {
+    padding: 15px 16px 15px;
+    background-color: rgba(0,0,0,0);
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    max-width: 480px;
+    border: 1px solid #0B5f89;
+    z-index: 3;
+    border-radius: 24px !important;
+    -webkit-border-radius: 24px !important;
+    -moz-border-radius: 24px !important;
+    -ms-border-radius: 24px !important;
+    -o-border-radius: 24px !important;
+    transition: top 1s;
+    -webkit-transition: top 1s;
+    -moz-transition: top 1s;
+    -ms-transition: top 1s;
+    -o-transition: top 1s;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.sticky {
+    top: 0;
+    z-index: 2;
+}
+
+.active i {
+    color: #ec1f55;
+}
+
+.status {
+    text-align: center;
+}
+
+.status h1 {
+    color: #ec1f55;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.status p {
+    
+    font-size: 30px;
+}
+
+.back-cd {
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: -1;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    left: -193px;
+    background-position: center;
+    width: 100%;
+    height: 268px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.cd {
+    display: flex;
+    margin: auto;
+    width: 220px;
+    padding: 16px 0;
+    /* position: relative; */
+
+}
+
+
+.cd-thumb {
+    width: 100%;
+    padding-top: 100%;
+    border: 1px solid #fff;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 2;
+    transition: transform 0.1s ease;
+
+}
+
+
+.control {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+.btn {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #070707;
+    font-size: 18px;
+    padding: 0 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    flex: 0 0 auto;
+    padding-right: 16px;
+}
+
+
+.control .control-play {
+    font-size: 24px;
+}
+
+/* 
+.control .btn:not(.btn-toggle-play):active {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.control .btn:active {
+    opacity: 0.7;
+}
+
+.control .btn.active {
+    color: var(--primary-color);
+} */
+.btn {
+    padding: 0 16px;
+}
+
+
+.btn.control-play {
+    background-color: #000;
+    color: white !important;
+    padding: 20px;
+}
+
+.btn .icon-play, .btn .icon-pause {
+    display: none;
+
+}
+
+.control-play.play .icon-play {
+    display: block;
+}
+
+.control-play.play .icon-pause {
+    display: none;
+}
+
+.control-play.pause .icon-pause {
+    display: block;
+}
+
+.control-play.pause .icon-play {
+
+    display: none;
+}
+
+.progress {
+    width: 100%;
+    height: 8px;
+    background: #000;
+    outline: none;
+    opacity: 0.7s;
+    transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+}
+
+
+.progress::-webkit-slider-thumb {
+    cursor: pointer;
+}
+
+.time-display {
+    font-weight: 200;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.time-separator {
+    font-size: 16px;
+    line-height: 39px;
+}
+
+.list {
+}
+
+.playlist {
+    position: relative;
+    border: 1px solid #000;
+    width: 100%;
+    max-width: 480px;
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 12px 14px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    margin-bottom: 8px;
+}
+
+.playlist.active {
+    border: 8px solid #000;
+}
+
+.playlist:active {
+    opacity: 0.8
+}
+
+.playlist.active .thumb {
+    animation: roll 10s linear infinite;
+    -webkit-animation: roll 10s linear infinite;
+    -moz-animation: roll 10s linear infinite;
+    -ms-animation: roll 10s linear infinite;
+    -o-animation: roll 10s linear infinite;
+}
+
+@keyframes roll {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+.playlist:first-child {
+    margin-top: 640px;
+}
+
+.playlist:last-child {
+    margin-bottom: 360px;
+}
+
+.playlist .song {
+
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding: 12px 20px;
+}
+
+
+.playlist .thumb {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 24px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #000;
+
+}
+
+.playlist .body {
+    color: black;
+    flex-grow: 1;
+}
+
+.playlist .option {
+    position: absolute;
+    right: 0;
+    margin-right: 28px;
+    font-size: 20px;
+    color: black;
+}
+
+.add_Song {
+    background-color: #000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 10px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    z-index: 999;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    user-select: none;
+    color: #eee !important;
+    font-weight: bold;
+    right: 0 !important;
+    font-size: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+
+.add_Song .icon {
+    font-size: inherit;
+    align-items: center;
+
+
+}

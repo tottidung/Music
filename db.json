@@ -1,0 +1,61 @@
+{
+  "songs": [
+    {
+      "name": "Mang Chủng",
+      "singer" : "Âm Khuyết Thi Thính, Triệu Phương Tịnh" ,
+      "path" : "./assets/audio/song1.mp3",
+      "image" : "./assets/image/song1.jpg"
+    },
+    {
+      "name": "Tam Bái Hồng Trần Lương",
+      "singer" : "Doãn Tích Miên" ,
+      "path" : "./assets/audio/song2.mp3",
+      "image" : "./assets/image/song2.jpg"
+    },
+    {
+      "name": "Hải Thị Thận Lâu",
+      "singer" : "Hứa Lam Tân" ,
+      "path" : "./assets/audio/song3.mp3",
+      "image" : "./assets/image/song3.jpg"
+    },
+    {
+      "name": "Ta Mượn Hồng Trần 2 Lạng Rượu",
+      "singer" : "Nam Chiêu" ,
+      "path" : "./assets/audio/song4.mp3",
+      "image" : "./assets/image/song4.jpg"
+    },
+    {
+      "name": "Thương Ly Biệt",
+      "singer" : "Ngụy Tân Vũ" ,
+      "path" : "./assets/audio/song5.mp3",
+      "image" : "./assets/image/song5.jpg"
+    },{
+      "name": "Yến Vô Hiết",
+      "singer" : "Tương Tuyết Nhi" ,
+      "path" : "./assets/audio/song6.mp3",
+      "image" : "./assets/image/song6.jpg"
+    },{
+      "name": "Phong, Hoa, Tuyết, Nguyệt",
+      "singer" : "Tử Đường Túc" ,
+      "path" : "./assets/audio/song7.mp3",
+      "image" : "./assets/image/song7.jpg"
+    },{
+      "name": "Rất Muốn Vẫn Còn Nhỏ",
+      "singer" : "Đậu Bao" ,
+      "path" : "./assets/audio/song8.mp3",
+      "image" : "./assets/image/song8.jpg"
+    },
+    {
+      "name": "Phương Xa",
+      "singer" : "Hồng Bố Điều" ,
+      "path" : "./assets/audio/song9.mp3",
+      "image" : "./assets/image/song9.jpg"
+    },
+    {
+      "name": "Yêu Tiền Yêu Bản Thân ",
+      "singer" : "Hoàng Tĩnh Mỹ" ,
+      "path" : "./assets/audio/song10.mp3",
+      "image" : "./assets/image/song10.jpg"
+    }
+  ]
+}

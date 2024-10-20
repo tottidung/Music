@@ -1,0 +1,102 @@
+.background-container {
+    position: relative;
+}
+
+#waveCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    margin-bottom: 20px;
+    /* Đưa canvas ra sau nội dung */
+}
+
+
+
+/* 
+.progress-container {
+    position: relative;
+}
+
+.wave-form {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    animation: hieu_ung_wave 0.5s 0.5s forwards;
+    background-color: white;
+    width: 94%;
+    height: 20px;
+    bottom: 66px;
+    -webkit-animation: hieu_ung_wave 0.5s 0.5s forwards;
+
+    overflow: hidden !important;
+}
+
+
+.wave {
+    opacity: 0.6;
+    position: absolute;
+    left: -8%;
+    background:  red;
+    margin-left: -300px;
+    transform-origin: 50% 48%;
+    border-radius: 46%;
+    animation: wave 12s infinite linear;
+    pointer-events: none;
+    z-index: -2;
+    width: 149%;
+    height: 300px;
+    bottom: 66px;
+    overflow: hidden !important;
+    bottom: 0;
+    -webkit-animation: wave 12s infinite linear;
+}
+
+.wave2 {
+    animation: wave 28s infinite linear;
+    opacity: 0.3;
+    z-index: -2;
+    -webkit-animation: wave 28s infinite linear;
+}
+
+.wave3 {
+    animation: wave 20s infinite linear;
+    opacity: 1;
+    z-index: -2;
+    -webkit-animation: wave 20s infinite linear;
+}
+
+
+
+@keyframes hieu_ung_wave {
+    from {
+        transform: translateY(1.1rem);
+        opacity: 0;
+        -webkit-transform: translateY(1.1rem);
+        -moz-transform: translateY(1.1rem);
+        -ms-transform: translateY(1.1rem);
+        -o-transform: translateY(1.1rem);
+}
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes wave {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+} */

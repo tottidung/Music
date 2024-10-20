@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Play Music</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/snow.css">
+        <link rel="stylesheet" href="./assets/css/hz.css">
+        <link rel="stylesheet" href="./assets/css/dayAndNight.css">
+        <link rel="stylesheet" href="./assets/css/rubbish.css">
+        <!-- <link rel="stylesheet" href="./assets/css/curtains.css"> -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+            rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
+    <body>
+        <!-- Snow animation -->
+        <div class="snow-container"></div>
+        <div class="curtain"></div>
+        <div class="player">
+
+            <!-- Dashboard -->
+            <div class="dashboard">
+                <!-- Status -->
+                <div class="status">
+                    <h1>Listen Music</h1>
+                    <p>Discover and enjoy your favorite music.</p>
+                </div>
+
+                <!-- CD -->
+                <div class="back-cd"
+                    style="background-image: url('	')"></div><div
+                    class="background-container">
+
+                    <div class="cd">
+                        <div class="cd-thumb"
+                            style="background-image: url('')">
+
+                        </div>
+
+                        <canvas id="waveCanvas" width="245"
+                            height="10"></canvas>
+                    </div>
+                </div>
+
+                <!-- Control -->
+                <div class="control">
+                    <div class="btn control-repeat">
+                        <i class="fas fa-redo"></i>
+                    </div>
+
+                    <div class="btn control-preplay">
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div class="btn control-play play">
+                        <i class="fas fa-pause icon-pause"></i>
+                        <i class="fas fa-play icon-play"></i>
+                    </div>
+                    <div class="btn control-nextplay">
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                    <div class="btn control-random ">
+                        <i class="fas fa-random "></i>
+
+                    </div>
+                </div>
+                <!-- <div class="wave-form"><div class="wave"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div></div>    -->
+                <div class="progress-container">
+                    <input class="progress" id="progress" type="range"
+                        value="0" step="1" min="0" max="100">
+
+                    <audio id="audio" src></audio>
+                    <div class="time-display">
+                        <span class="current-time">00:00</span> <span
+                            class="time-separator">/</span> <span
+                            class="total-time">00:00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Playlist -->
+            <div class="list">
+
+            </div>
+            <!-- Btn addSong -->
+            <div class="btn add_Song">
+                <i class="icon fa-solid fa-plus"></i>
+            </div>
+        </div>
+
+        <div class="fullpage">
+            <div class="section">
+                <div class="time-circle">
+                    <div class="sun"></div>
+                    <div class="moon">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="stars">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div class="water"></div>
+                </div>
+
+                <div id="switch">
+                    <div id="circle"></div>
+                </div>
+            </div>
+        </div>
+        <!-- <script src="./assets/script/curtains.js"></script> -->
+        <script src="./assets/script/stickyScroll.js"></script>
+        <script src="./assets/script/snow.js"></script>
+        <script src="./assets/script/song.js"></script>
+        <noscript src="./assets/script/connectDb.js"></noscript>
+        <script src="./assets/script/colorList.js"></script>
+        <script src="./assets/script/dayAndNight.js"></script>
+    </body>
+</html>

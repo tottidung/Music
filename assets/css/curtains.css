@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Đảm bảo rằng không có thanh cuộn */
+}
+
+.curtain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    /* Màu nền tối mờ */
+    backdrop-filter: blur(10px);
+    /* Hiệu ứng mờ nền */
+    animation: curtainEffect 2s ease-in-out forwards;
+    /* Hiệu ứng rèm cửa */
+}
+
+@keyframes curtainEffect {
+    0% {
+        transform: translateY(-100%);
+        /* Bắt đầu từ phía trên */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Kéo xuống phủ kín toàn bộ body */
+    }
+}
